@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-west-2"
+  region = "us-east-1"
 }
 
 resource "random_id" "my-random-id" {
@@ -24,6 +24,6 @@ resource "aws_s3_bucket" "my-test-bucket" {
   }
 
   tags = {
-    Name = "21-days-of-aws-using-terraform"
+    Name = "aws-using-terraform"
   }
 }
